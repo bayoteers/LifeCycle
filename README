@@ -1,0 +1,40 @@
+== Bugzilla Lifecycles Calculator ==
+
+This bit of software helps calculate the lifecycle of a bug or set of bugs. 
+
+The lifecycle is the avg time in days passed for the bug to pass from state A to state B.
+
+There are several kind of lifecycles calculated:
+
+Overall: New --> Closed
+Fixing:  New --> Resolved/Fixed
+Releasing: Resolved/Fixed --> Released
+Verification_fixed: Released/Fixed --> Verified
+Verification_unfixed: Resolved/NotFixed --> Verified
+Waiting: Waiting --> Resolved
+
+The tool has 3 main routines:
+
+1) Dump the DB content
+2) Rebuild the history forward (bugzilla stores it backward)
+3) Calculate lifecycles
+
+Since the tool _has_ the history of all the bugs (with flags and keywords and stuff) it can
+in theory be used to calculate any kind of statistics.
+
+Also the tool has in the cfg file facilities to filter the bugs by type (severity and/or flags and/or keywords).
+
+== Output ==
+
+The scripts produce 2 kind of outputs: CSV and HTML.
+
+HTML contains also the links to the bugtracking system instance.
+
+CSV is mainly for post-processing.
+
+The files end up in a dir that you need to configure in the cfg file
+
+
+== Installation ==
+
+Build the debian package and install it. Repackage it if you don't use Debian.

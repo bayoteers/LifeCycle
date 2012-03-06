@@ -1,0 +1,3 @@
+tables python-tables
+sqlalchemy python-sqlalchemy
+mysqldb python-mysqldb

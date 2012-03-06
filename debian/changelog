@@ -1,0 +1,28 @@
+bugzillametrics (0.4) unstable; urgency=low
+
+  * Rebuild routine rewrote almost completely
+    * Full history is now rebuilt taking care of when flags & keywords appeared
+    * Tweaks to take care of status/priority modifications done in house
+  * Fixing bugs in count phase where comments or flags on a resolved/fixed bug
+    where interpreted as resolving/fixing date
+
+ -- Stefano Mosconi <stefano.mosconi@nokia.com>  Tue, 30 Aug 2011 09:41:21 +0300
+
+bugzillametrics (0.3) unstable; urgency=low
+
+  * Getting command line options
+  * Filters are now in configuration file
+
+ -- Stefano Mosconi <stefano.mosconi@nokia.com>  Tue, 16 Aug 2011 17:36:33 +0300
+
+bugzillametrics (0.2) unstable; urgency=low
+
+  * new release of bugzillametrics 
+
+ -- Stefano Mosconi <stefano.mosconi@nokia.com>  Fri, 22 Jul 2011 15:20:14 +0300
+
+bugzillametrics (0.1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Stefano Mosconi <stefano.mosconi@nokia.com>  Fri, 27 May 2011 10:58:45 +0300
